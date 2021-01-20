@@ -1,0 +1,637 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup,です
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    /* 以下の部分が消えておりました */
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+#header{
+  height: 100px;
+  background: #000;
+  color:#fff;
+  list-style: none;
+}
+.header-div{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#header ul{
+  justify-content: space-between;
+  display: flex
+}
+
+#header li{
+  margin:0 10px
+}
+
+#news{
+  height: 500px;
+  background: url(../img/eyecatch.jpg)no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.news-h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 15%;
+    padding-left: 10%;
+}
+
+.news-window{
+    position: absolute;
+    height: 10%;
+    width:40%;
+    display: flex;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%,-100%);
+    border: 0.1px solid #ccc;
+}
+
+.news-title{
+    background: #fff;
+    height: 100%;
+    width: 80%;
+}
+
+.news-button{
+    background: black;
+    color:#fff;
+    height: 100%;
+    width:20%;
+}
+
+.title{
+    margin: auto 0 auto 10px;
+    font-size: 100%;
+}
+
+#mission{
+    height: 400px;
+    background:#000;
+    position: relative;
+}
+
+.mission-text{
+    height: 50%;
+    width: 64%;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mission-text h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding:0 0 40px 0;
+}
+
+.mission-text h3{
+    padding:0 0 20px 0;
+    line-height: 1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.mission-text button{
+    height:20%;
+    border-radius: 3px;
+    background: #fff;
+    width: 170px;
+    font-size: 16px;
+}
+
+.white{
+    height: 100px;
+    background:#fff;
+}
+
+.mission-image{
+    position: absolute;
+    top: 70%;
+    right: 0;
+    transform: translate(0,-50%);
+    z-index: 1;
+    background: url(../img/mission-img.jpg)no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 550px;
+}
+
+#service{
+    height: 1000px;
+    width:100%;
+    background: #ccc;
+}
+
+#service h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding:10px;
+}
+
+.service-first{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.service-text1{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%,-50%);
+    z-index: 2;
+}
+
+.service-text1-deco{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.service-text1 h2{
+    font-weight: bold;
+}
+
+.service-text1 h3{
+    font-size: 14px;
+}
+
+.service-text1 button{
+    height: 35px;
+    width: 150px;
+    padding: 0 20px;
+    position: absolute;
+    height: 35px;
+    bottom: 10%;
+    right: 0;
+}
+
+.service-image1{
+    height: 60%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0,-50%);
+    background: url(../img/service2.jpg)no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.service-second{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.service-image2{
+    height: 60%;
+    width:50%;
+    position: absolute;
+    background: url(../img/service1.jpg)no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 15%;
+    transform: translate(0,-50%);
+}
+
+.service-text2{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right:0%;
+    transform: translate(-15%,-50%);
+    background: #fff;
+    z-index: 2;
+}
+
+
+.service-text2-deco{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.service-text2 h2{
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.service-text2 h3{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.service-text2 button{
+    height: 35px;
+    width: 150px;
+    padding: 0 20px;
+    position: absolute;
+    height: 35px;
+    right: 0;
+}
+
+#company-recruit-FAQ{
+    height: 400px;
+    position: relative;
+}
+
+.company-recruit{
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.company{
+    height: 50%;
+    width: 40%;
+    background:url(../img/company.jpeg)no-repeat;
+    position: relative;
+    margin: 60px 0;
+}
+
+.company-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.company h2{
+    font-size: 30px;
+}
+
+.company h3{
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+
+.recruit{
+    height: 50%;
+    width: 40%;
+    background: url(../img/recruit.jpg)no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    margin: 60px 0;
+    text-align: center;
+}
+.recruit-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.recruit-text h2{
+    font-size: 30px;
+}
+.recruit-text h3{
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+#FAQ{
+    height: 25%;
+    width: 80%;
+    background: #000;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+    margin: 0 auto 0 auto;
+}
+#FAQ h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+#FAQ h2{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    padding-left: 15px;
+}
+
+#contact{
+    height: 400px;
+    width: 100%;
+    background: url(../img/contact-bg.jpg)no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    font-weight: bold;
+}
+
+.contact-text h1{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.contact-text h3{
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+.contact-text h2{
+    font-size: 45px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.contact-text h5{
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.contact-text button{
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border: 1px solid #fff;
+    height: 40px;
+    width: 25%;
+    font-size: 16px;
+}
+
+#footer{
+    height: 100px;
+    background: #000;
+    position: relative;
+    color: #FFF;
+}
+
+.footer-menu{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+/* .footer-menu li{
+    
+} */
+
+.footer-menu li{
+    margin: 0 10px;
+}
+
+#footer p{
+    color: #fff;
+    background: black;
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+#hamburger{
+    height:40px;
+    width: 40px;
+    background-color: #000;
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    right: 20px;
+    transform: translate(0%,-50%);
+    cursor: pointer;
+}
+#hamburger span{
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.8s;
+}
+#hamburger span:nth-of-type(1){
+    top: 10px;
+}
+#hamburger span:nth-of-type(2){
+    top: 20px;
+}
+#hamburger span:nth-of-type(3){
+    top: 30px;
+}
+
+#header nav{
+    display: none;
+}
+.news-window{
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform: translate(-50%,-100%);
+    height: 10%;
+    width: 100%;
+}
+.news-h1{
+    position: absolute;
+    top:  40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    padding: 0;
+    width: 80%;
+}
+.news-span{
+    display: block;
+    font-size: 80%;
+}
+.white{
+    height: 20px;
+}
+.mission-text{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    
+}
+.mission-image{
+    height:70%;
+    width:70%;
+}
+#mission{
+    height: 500px;
+}
+#service{
+    height: 1000px;
+    position: relative;
+}
+.service-first{
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: aqua;
+    margin-bottom: 1000px;
+}
+.service-image1{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%,0%); 
+
+}
+.service-text1{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.service-second{
+    width: 100%;
+    height:500px;
+    background-color: blue;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+
+}
+
+
+}
