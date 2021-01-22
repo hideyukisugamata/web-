@@ -8,540 +8,603 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup,です
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+です time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-    line-height:1;
+  line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 nav ul {
-    list-style:none;
+  list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    /* 以下の部分が消えておりました */
-    border:0;
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display: block;
+  height: 1px;
+  /* 以下の部分が消えておりました */
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+  vertical-align: middle;
 }
 
-#header{
+#header {
   height: 100px;
   background: #000;
-  color:#fff;
+  color: #fff;
   list-style: none;
 }
-.header-div{
+.header-div {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#header h2{
+#header h2 {
   font-size: 30px;
   font-weight: bold;
+  margin-left: 30px;
 }
 
-#header ul{
+#header ul {
   justify-content: space-between;
-  display: flex
+  display: flex;
 }
 
-#header li{
-  margin:0 10px
+#header li {
+  margin: 0 10px;
 }
 
-#news{
+#news {
   height: 500px;
-  background: url(../img/eyecatch.jpg)no-repeat;
+  background: url(../img/eyecatch.jpg) no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.news-h1{
-    font-size: 50px;
-    font-weight: bold;
-    color: #fff;
-    padding-top: 15%;
-    padding-left: 10%;
+.news-h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 15%;
+  padding-left: 10%;
 }
 
-.news-window{
-    position: absolute;
-    height: 10%;
-    width:40%;
-    display: flex;
-    top: 100%;
-    left: 100%;
-    transform: translate(-100%,-100%);
-    border: 0.1px solid #ccc;
+.news-window {
+  position: absolute;
+  height: 10%;
+  width: 40%;
+  display: flex;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+  border: 0.1px solid #ccc;
 }
 
-.news-title{
-    background: #fff;
-    height: 100%;
-    width: 80%;
+.news-title {
+  background: #fff;
+  height: 100%;
+  width: 80%;
 }
 
-.news-button{
-    background: black;
-    color:#fff;
-    height: 100%;
-    width:20%;
+.news-button {
+  background: black;
+  color: #fff;
+  height: 100%;
+  width: 20%;
 }
 
-.title{
-    margin: auto 0 auto 10px;
-    font-size: 100%;
+.title {
+  margin: auto 0 auto 10px;
+  font-size: 100%;
 }
 
-#mission{
-    height: 400px;
-    background:#000;
-    position: relative;
+#mission {
+  height: 400px;
+  background: #000;
+  position: relative;
 }
 
-.mission-text{
-    height: 50%;
-    width: 64%;
-    position: absolute;
-    z-index: 2;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.mission-text {
+  height: 50%;
+  width: 64%;
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.mission-text h1{
-    font-size: 30px;
-    font-weight: bold;
-    padding:0 0 40px 0;
+.mission-text h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 0 40px 0;
 }
 
-.mission-text h3{
-    padding:0 0 20px 0;
-    line-height: 1.5em;
-    font-family:Arial, Helvetica, sans-serif;
+.mission-text h3 {
+  padding: 0 0 20px 0;
+  line-height: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.mission-text button{
-    height:20%;
-    border-radius: 3px;
-    background: #fff;
-    width: 170px;
-    font-size: 16px;
+.mission-text button {
+  height: 20%;
+  border-radius: 3px;
+  background: #fff;
+  width: 170px;
+  font-size: 16px;
 }
 
-.white{
-    height: 100px;
-    background:#fff;
+.white {
+  height: 100px;
+  background: #fff;
 }
 
-.mission-image{
-    position: absolute;
-    top: 70%;
-    right: 0;
-    transform: translate(0,-50%);
-    z-index: 1;
-    background: url(../img/mission-img.jpg)no-repeat;
-    background-size: cover;
-    height: 400px;
-    width: 550px;
+.mission-image {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  transform: translate(0, -50%);
+  z-index: 1;
+  background: url(../img/mission-img.jpg) no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 550px;
 }
 
-#service{
-    height: 1000px;
-    width:100%;
-    background: #ccc;
+#service {
+  height: 1100px;
+  width: 100%;
+  background: #ccc;
 }
 
-#service h1{
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    padding:10px;
+#service h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
 }
 
-.service-first{
-    height: 500px;
-    width: 100%;
-    position: relative;
+.service-first {
+  height: 500px;
+  width: 100%;
+  position: relative;
 }
 
-.service-text1{
-    height: 50%;
-    width: 50%;
-    position: absolute;
-    background: #fff;
-    top: 50%;
-    left: 15%;
-    transform: translate(-15%,-50%);
-    z-index: 2;
+.service-text1 {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  background: #fff;
+  top: 40%;
+  left: 15%;
+  transform: translate(-15%, -40%);
+  z-index: 2;
 }
 
-.service-text1-deco{
-    height: 80%;
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.service-text1-deco {
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.service-text1 h2{
-    font-weight: bold;
+.service-text1 h2 {
+  font-weight: bold;
 }
 
-.service-text1 h3{
-    font-size: 14px;
+.service-text1 h3 {
+  font-size: 14px;
 }
 
-.service-text1 button{
-    height: 35px;
-    width: 150px;
-    padding: 0 20px;
-    position: absolute;
-    height: 35px;
-    bottom: 10%;
-    right: 0;
-    border-radius: 0%;
-    border: 0.1px solid black;
+.service-text1 button {
+  height: 35px;
+  width: 150px;
+  padding: 0 20px;
+  position: absolute;
+  height: 35px;
+  bottom: 10%;
+  right: 0;
+  border-radius: 0%;
+  border: 0.1px solid black;
 }
 
-.service-image1{
-    height: 60%;
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-100%,-50%);
-    background: url(../img/service2.jpg)no-repeat;
-    background-size: contain;
-    z-index: 1;
+.service-image1 {
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/service2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
 }
 
-.service-second{
-    height: 500px;
-    width: 100%;
-    position: relative;
+.service-second {
+  height: 500px;
+  width: 100%;
+  position: relative;
 }
 
-.service-image2{
-    height: 60%;
-    width:50%;
-    position: absolute;
-    background: url(../img/service1.jpg)no-repeat;
-    background-size: contain;
-    top: 50%;
-    left: 15%;
-    transform: translate(0,-50%);
+.service-image2 {
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  background: url(../img/service1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: 0%;
+  transform: translate(0, -50%);
 }
 
-.service-text2{
-    height: 50%;
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    right:0%;
-    transform: translate(-15%,-50%);
-    background: #fff;
-    z-index: 2;
+.service-text2 {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-15%, -50%);
+  background: #fff;
+
+  z-index: 2;
 }
 
-
-.service-text2-deco{
-    height: 80%;
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.service-text2-deco {
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.service-text2 h2{
-    font-weight: bold;
-    padding-top: 10px;
+.service-text2 h2 {
+  font-weight: bold;
+  padding-top: 10px;
 }
 
-.service-text2 h3{
-    font-size: 14px;
-    margin: 20px 0;
+.service-text2 h3 {
+  font-size: 14px;
+  margin: 20px 0;
 }
 
-.service-text2 button{
-    height: 35px;
-    width: 150px;
-    padding: 0 20px;
-    position: absolute;
-    height: 35px;
-    right: 0;
-    border-radius: 0%;
-    border: 0.1px solid black;
+.service-text2 button {
+  height: 35px;
+  width: 150px;
+  padding: 0 20px;
+  position: absolute;
+  height: 35px;
+  right: 0;
+  border-radius: 0%;
+  border: 0.1px solid black;
 }
 
-#company-recruit-FAQ{
-    height: 400px;
-    position: relative;
+#company-recruit-FAQ {
+  height: 600px;
+  position: relative;
+}
+.company-recruit {
+  height: 50%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.company {
+  height: 60%;
+  width: 40%;
+  background: url(../img/company.jpeg) no-repeat;
+  position: relative;
 }
 
-.company-recruit{
-    height: 250px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
+.company-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
 }
 
-.company{
-    height: 50%;
-    width: 40%;
-    background:url(../img/company.jpeg)no-repeat;
-    position: relative;
-    margin: 60px 0;
-    left: 0px;
+.company h2 {
+  font-size: 30px;
 }
 
-.company-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: #fff;
+.company h3 {
+  font-size: 20px;
+  padding: 10px 0 0 0;
 }
 
-.company h2{
-    font-size: 30px;
+.recruit {
+  height: 60%;
+  width: 40%;
+  background: url(../img/recruit.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.recruit-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.recruit-text h2 {
+  font-size: 30px;
+}
+.recruit-text h3 {
+  font-size: 20px;
+  padding: 10px 0 0 0;
+}
+#FAQ {
+  height: 15%;
+  width: 80%;
+  background: #000;
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+  margin: 100px auto 0 auto;
+}
+#FAQ h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+#FAQ h2 {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-left: 15px;
 }
 
-.company h3{
-    font-size: 20px;
-    padding: 10px 0 0 0;
+#contact {
+  height: 400px;
+  width: 100%;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #fff;
 }
 
-.recruit{
-    height: 50%;
-    width: 40%;
-    background: url(../img/recruit.jpg)no-repeat;
-    background-size: cover;
-    position: relative;
-    right:0px;
-    color: #fff;
-    font-weight: bold;
-    margin: 60px 0;
-    text-align: center;
-}
-.recruit-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.recruit-text h2{
-    font-size: 30px;
-}
-.recruit-text h3{
-    font-size: 20px;
-    padding: 10px 0 0 0;
-}
-#FAQ{
-    height: 25%;
-    width: 80%;
-    background: #000;
-    color: #fff;
-    position: relative;
-    font-weight: bold;
-    margin: 0 auto 0 auto;
-}
-#FAQ h3{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 20px;
-}
-#FAQ h2{
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    padding-left: 15px;
+.contact-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-weight: bold;
 }
 
-#contact{
-    height: 400px;
-    width: 100%;
-    background: url(../img/contact-bg.jpg)no-repeat;
-    background-size: cover;
-    position: relative;
-    text-align: center;
-    color: #fff;
+.contact-text h1 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.contact-text h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 30px;
 }
 
-.contact-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    font-weight: bold;
+.contact-text h5 {
+  font-size: 14px;
+  padding-bottom: 30px;
+  font-weight: normal;
 }
 
-.contact-text h1{
-    font-size: 30px;
-    padding-bottom: 10px;
+.contact-text button {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  border: 1px solid #fff;
+  height: 40px;
+  width: 15%;
+  font-size: 16px;
 }
 
-.contact-text h3{
-    font-size: 15px;
-    padding-bottom: 30px;
+#footer {
+  height: 100px;
+  background: #000;
+  position: relative;
+  color: #fff;
+}
+#footer h2 {
+  margin-left: 30px;
 }
 
-.contact-text h2{
-    font-size: 45px;
-    font-weight: normal;
-    padding-bottom: 20px;
+.footer-menu {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.contact-text h5{
-    font-size: 16px;
-    padding-bottom: 30px;
+.footer-menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
-.contact-text button{
-    background-color: rgba(255, 255, 255, 0);
-    color: #fff;
-    border: 1px solid #fff;
+.footer-menu li {
+  margin: 0 10px;
+}
+
+#footer p {
+  color: #fff;
+  background: black;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #header h2 {
+    margin-left: 40px;
+  }
+  #hamburger {
     height: 40px;
-    width: 25%;
-    font-size: 16px;
-}
-
-#footer{
-    height: 100px;
-    background: #000;
-    position: relative;
-    color: #FFF;
-}
-
-.footer-menu{
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-menu ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-.footer-menu li{
-    margin: 0 10px;
-}
-
-#footer p{
-    color: #fff;
-    background: black;
-    text-align: center;
-}
-
-@media screen and (max-width:768px){
-#header h2{
-    margin-left: 20px;
-}
-#hamburger{
-    height:40px;
     width: 40px;
     background-color: #000;
     position: absolute;
     z-index: 100;
     top: 50px;
     right: 20px;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
     cursor: pointer;
-}
-#hamburger span{
+  }
+  #hamburger span {
     position: absolute;
     left: 2px;
     display: block;
@@ -549,164 +612,162 @@ input, select {
     height: 2px;
     background-color: #fff;
     transition: 0.8s;
-}
-#hamburger span:nth-of-type(1){
+  }
+  #hamburger span:nth-of-type(1) {
     top: 10px;
-}
-#hamburger span:nth-of-type(2){
+  }
+  #hamburger span:nth-of-type(2) {
     top: 20px;
-}
-#hamburger span:nth-of-type(3){
+  }
+  #hamburger span:nth-of-type(3) {
     top: 30px;
-}
+  }
 
-#header nav{
+  #header nav {
     display: none;
-}
-.news-window{
+  }
+  .news-window {
     position: absolute;
     top: 100%;
-    left:50%;
-    transform: translate(-50%,-100%);
+    left: 50%;
+    transform: translate(-50%, -100%);
     height: 10%;
     width: 100%;
-}
-.news-h1{
+  }
+  .news-h1 {
     position: absolute;
-    top:  40%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%,-40%);
+    transform: translate(-50%, -40%);
     padding: 0;
     width: 80%;
-}
-.news-span{
+  }
+  .news-span {
     display: block;
     font-size: 80%;
-}
-.white{
+  }
+  .white {
     height: 20px;
-}
-.mission-text{
+  }
+  .mission-text {
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-30%);
-    
-}
-.mission-image{
-    height:30%;
-    width:30%;
+    transform: translate(-50%, -30%);
+  }
+  .mission-image {
+    height: 30%;
+    width: 30%;
     background-size: contain;
-    top:90%;
-    left:90%;
-    transform: translate(-100%,0);
-
-    
-}
-#mission{
-    height: 500px;}
-.mission-text h3{
+    top: 90%;
+    left: 90%;
+    transform: translate(-100%, 0);
+  }
+  #mission {
+    height: 500px;
+  }
+  .mission-text h3 {
     font-weight: normal;
-}
+  }
 
-#service{
-    height: 1100px;
+  #service {
+    height: 1200px;
     position: relative;
-}
-.service-first{
+  }
+  .service-first {
     width: 90%;
     height: 500px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,0%);
-    margin-bottom: 1000px;
-}
-.service-image1{
+    transform: translate(-50%, 0%);
+  }
+  .service-image1 {
     width: 100%;
     height: 50%;
     position: absolute;
-    top: 7%;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%,0%); 
-
-}
-.service-text1{
+    transform: translate(-50%, 0%);
+    background-size: cover;
+    background-position: center;
+  }
+  .service-text1 {
     width: 100%;
     height: 50%;
     position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    background-color: #fff;
-}
-.service-second{
-    width: 90%;
-    height:500px;
-    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,0);
-}
-.service-image2{
+    transform: translate(-50%, 0%);
+    background-color: #fff;
+  }
+  .service-second {
+    height: 500px;
+    width: 90%;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .service-image2 {
     width: 100%;
     height: 50%;
     position: absolute;
     top: 0%;
     left: 0%;
-    transform: translate(0%,0%);
-}
-.service-text2{
+    transform: translate(0%, 0%);
+    background-size: cover;
+    background-position: center;
+  }
+  .service-text2 {
     width: 100%;
     height: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-25%);
-    background-color:#fff;
-}
+    transform: translate(-50%, 0%);
+    background-color: #fff;
+  }
 
-#company-recruit-FAQ{
-    height: 880px;
-    background-color:#fff;
+  #company-recruit-FAQ {
+    height: 1000px;
+    background-color: #fff;
     margin-top: 30px;
-}
-.company-recruit{
+  }
+  .company-recruit {
     flex-wrap: wrap;
-    height: 600px;
-}
-.company{
+    height: 80%;
+  }
+  .company {
     width: 100%;
-    height: 300px;
+    height: 50%;
     margin: 0;
-}
-.recruit{
+  }
+  .recruit {
     width: 100%;
-    height: 300px;
+    height: 50%;
     margin: 0;
-}
-#FAQ{
-    width: 90%;
-    margin-top: 30px;
-}
-.contact-text{
-    width: 80%;
-}
-.contact-text h5{
+  }
+  #FAQ {
+    width: 95%;
+    height: 15%;
     font-weight: normal;
-}
+    margin: 25px auto;
+  }
+  .contact-text {
+    width: 80%;
+  }
 
-.contact-text button{
-    width: 70%;
-}
+  .contact-text button {
+    width: 50%;
+  }
 
-#footer ul{
+  #footer ul {
     display: none;
-}
-#footer h2{
+  }
+  #footer h2 {
     font-size: 20px;
     margin: auto;
-}
-#footer p{
+  }
+  #footer p {
     font-size: 10px;
-}
-
+  }
 }
