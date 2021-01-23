@@ -199,24 +199,25 @@ select {
 }
 
 #news {
-  height: 500px;
+  height: 600px;
   background: url(../img/eyecatch.jpg) no-repeat;
   background-size: cover;
   position: relative;
 }
 
 .news-h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   color: #fff;
   padding-top: 15%;
-  padding-left: 10%;
+  padding-left: 5%;
+  font-style: italic;
 }
 
 .news-window {
   position: absolute;
   height: 10%;
-  width: 40%;
+  width: 50%;
   display: flex;
   top: 100%;
   left: 100%;
@@ -238,27 +239,33 @@ select {
 }
 
 .title {
-  margin: auto 0 auto 10px;
-  font-size: 100%;
+  margin: 10px 0 auto 10px;
+  font-weight: normal;
+}
+.date {
+  font-weight: normal;
 }
 
 #mission {
-  height: 400px;
+  height: 600px;
   background: #000;
   position: relative;
 }
 
 .mission-text {
-  height: 50%;
-  width: 64%;
+  height: 60%;
+  width: 70%;
   position: absolute;
   z-index: 2;
   color: #fff;
-  top: 50%;
-  left: 50%;
+  top: 70%;
+  left: 48%;
   transform: translate(-50%, -50%);
+  padding-right: 55px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  letter-spacing: 0.002em;
 }
-
 .mission-text h1 {
   font-size: 30px;
   font-weight: bold;
@@ -267,12 +274,12 @@ select {
 
 .mission-text h3 {
   padding: 0 0 20px 0;
-  line-height: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7em;
 }
 
 .mission-text button {
-  height: 20%;
+  height: 12%;
   border-radius: 3px;
   background: #fff;
   width: 170px;
@@ -280,7 +287,7 @@ select {
 }
 
 .white {
-  height: 100px;
+  height: 200px;
   background: #fff;
 }
 
@@ -292,7 +299,7 @@ select {
   z-index: 1;
   background: url(../img/mission-img.jpg) no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 500px;
   width: 550px;
 }
 
@@ -328,7 +335,7 @@ select {
 
 .service-text1-deco {
   height: 80%;
-  width: 80%;
+  width: 66%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -341,6 +348,8 @@ select {
 
 .service-text1 h3 {
   font-size: 14px;
+  line-height: 1.5em;
+  font-weight: normal;
 }
 
 .service-text1 button {
@@ -353,6 +362,7 @@ select {
   right: 0;
   border-radius: 0%;
   border: 0.1px solid black;
+  background-color: #fff;
 }
 
 .service-image1 {
@@ -386,22 +396,21 @@ select {
 }
 
 .service-text2 {
-  height: 50%;
+  height: 60%;
   width: 50%;
   position: absolute;
   top: 50%;
   right: 0%;
   transform: translate(-15%, -50%);
   background: #fff;
-
   z-index: 2;
 }
 
 .service-text2-deco {
   height: 80%;
-  width: 80%;
+  width: 66%;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -414,6 +423,8 @@ select {
 .service-text2 h3 {
   font-size: 14px;
   margin: 20px 0;
+  line-height: 1.5em;
+  font-weight: normal;
 }
 
 .service-text2 button {
@@ -425,6 +436,7 @@ select {
   right: 0;
   border-radius: 0%;
   border: 0.1px solid black;
+  background-color: #fff;
 }
 
 #company-recruit-FAQ {
@@ -652,6 +664,7 @@ select {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -30%);
+    width: 95%;
   }
   .mission-image {
     height: 30%;
@@ -696,7 +709,6 @@ select {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
-    background-color: #fff;
   }
   .service-second {
     height: 500px;
@@ -705,6 +717,11 @@ select {
     top: 53%;
     left: 50%;
     transform: translate(-50%, 0%);
+  }
+  .service-text1-deco {
+    width: 95%;
+    height: 95%;
+    line-height: 1em;
   }
   .service-image2 {
     width: 100%;
@@ -724,6 +741,14 @@ select {
     left: 50%;
     transform: translate(-50%, 0%);
     background-color: #fff;
+  }
+  .service-text2-deco {
+    width: 95%;
+    height: 95%;
+    line-height: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #company-recruit-FAQ {
